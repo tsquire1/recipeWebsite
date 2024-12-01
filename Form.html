@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Recipe - T's Taste</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>T's Taste</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="form.html">Submit a Recipe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="submit-recipe">
+            <h2>Submit Your Recipe</h2>
+            <form action="submit_recipe.php" method="post"> 
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="recipe-title">Recipe Title:</label>
+                <input type="text" id="recipe-title" name="recipe-title" required>
+
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="4" required></textarea>
+
+                <button type="submit">Submit Recipe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 T's Taste. All rights reserved.</p>
+    </footer>
+</body>
+</html>
